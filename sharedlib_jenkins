@@ -1,0 +1,11 @@
+@Library('hello')
+pipeline {
+  agent any
+  stages {
+    stage('Demo') {
+      steps {
+        sayHello 'Bassu'
+      }
+    }
+  }
+}
